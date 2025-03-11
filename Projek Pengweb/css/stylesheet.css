@@ -1,0 +1,149 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    background-color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: auto;
+}
+
+.beranda span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.beranda img{
+    margin-top: 50%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+ .main-text {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 800px;
+    background: #FFB200;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0.9;
+}
+
+.main-text:hover {
+    transform: scale(1.05);
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-text p {
+    font-size: 1.5rem;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1.8;
+    font-style: italic;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+} 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-text {
+        padding: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 2rem;
+    }
+
+    .main-text p {
+        font-size: 1.2rem;
+    }
+}
+
+.barang-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.barang-container h2 {
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.card {
+    height: auto ;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 80px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    max-width: 100%; 
+    border-radius: 5px;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card button {
+    background-color: #379219;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+ 

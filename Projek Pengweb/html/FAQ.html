@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/LOGO-TKJ-SMK-Swadhipa-2.png">
+    <link rel="stylesheet" href="../css/FAQ.css">
+    <title>FAQ - Peminjaman Alat</title>
+</head>
+
+<body>
+    <div class="faq-container">
+        <div class="faq-content">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Apa itu Sistem Informasi Peminjaman Alat?</p>
+                <p class="faq-answer">Sistem ini digunakan untuk mencatat dan mengelola peminjaman alat di sekolah agar lebih terorganisir.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Siapa yang dapat menggunakan sistem ini?</p>
+                <p class="faq-answer">Sistem ini dapat digunakan oleh siswa, guru, dan staf sekolah yang memiliki akun terdaftar.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Bagaimana cara meminjam alat?</p>
+                <p class="faq-answer">Pengguna harus login, memilih alat yang tersedia, mengajukan permohonan peminjaman, dan menunggu persetujuan dari admin atau petugas terkait.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Berapa lama durasi peminjaman alat?</p>
+                <p class="faq-answer">Durasi peminjaman tergantung pada kebijakan sekolah. Biasanya antara 1-7 hari, tetapi bisa diperpanjang dengan persetujuan.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Apa yang harus dilakukan jika alat yang saya butuhkan tidak tersedia?</p>
+                <p class="faq-answer">Anda dapat menunggu hingga alat tersebut dikembalikan atau menghubungi admin untuk informasi lebih lanjut.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Bagaimana jika alat yang dipinjam rusak atau hilang?</p>
+                <p class="faq-answer">Segera laporkan ke admin atau petugas. Tergantung kebijakan sekolah, peminjam mungkin bertanggung jawab untuk mengganti atau memperbaiki alat tersebut.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Bagaimana cara mengetahui status peminjaman saya?</p>
+                <p class="faq-answer">Anda dapat melihat status peminjaman melalui menu "Riwayat Peminjaman" di sistem.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Apakah ada denda jika terlambat mengembalikan alat?</p>
+                <p class="faq-answer">Beberapa sekolah menerapkan denda atau sanksi akademik bagi peminjam yang terlambat mengembalikan alat.</p>
+            </div>
+
+            <div class="faq-item">
+                <p onclick="toggleAnswer(this)">Siapa yang bisa saya hubungi jika mengalami masalah dengan sistem?</p>
+                <p class="faq-answer">Anda bisa menghubungi admin sekolah atau bagian IT melalui email di bawah ini.</p>
+            </div>
+
+            <div class="email-container">
+                <a href="rendyant2305@gmail.com">Hubungi Admin via Email</a>
+            </div>
+        </div>
+
+        <!-- Pencarian FAQ -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari pertanyaan..." onkeyup="searchFAQ()">
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html"><button>Kembali ke Beranda</button></a>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            answer.classList.toggle("active");
+        }
+
+        function searchFAQ() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var items = document.querySelectorAll(".faq-item");
+
+            items.forEach(function(item) {
+                var question = item.querySelector("p").textContent.toLowerCase();
+                if (question.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pengembalian{
+    background-color: #FFB200;
+    padding: 20px;
+}
+
+.container-pengembalian {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+}
+
+.judul {
+    text-align: center;
+    color: #000000;
+}
+
+.tombol-pengembalian {
+    display: block;
+    margin: 0 auto;
+    gap: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #379219 ;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-pengembalian a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container-pengembalian a button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#pengembalian-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+#pengembalian-table thead{
+    background-color: #79a618;
+    color: white;
+}
+
+#pengembalian-table th, #pengembalian-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+#pengembalian-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#pengembalian-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+

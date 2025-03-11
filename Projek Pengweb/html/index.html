@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../img/LOGO-TKJ-SMK-Swadhipa-2.png">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/pengembalian.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/formpengembalian.css">
+    
+    <title>SMK Swadhipa 2 Natar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-atas">
+                <a href="index.html">
+                    <img src="../img/LOGO-TKJ-SMK-Swadhipa-2.png" alt="logo" width="100px">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#beranda">BERANDA</a></li>
+                <li><a href="#list-peminjaman">LIST PEMINJAMAN</a></li>
+                <li><a href="#pengembalian">PENGEMBALIAN</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+
+            <div class="pencarian">
+                <input class="bar-pencarian" type="text" placeholder="Cari">
+                <button class="tombol-pencarian">&#128270;</button>
+            </div>
+
+            <div class="login">
+                <a href="login.html"><strong>Login</strong></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="beranda" id="beranda">
+            <span>
+                <img src="../img/LAB-TKJ-1024x683.png" alt="gambar">
+            </span>
+            <div class="main-text">
+                <h1>Peminjaman Alat Lab </h1>
+                <p>Teknik Komputer dan Jaringan</p>
+            </div>
+            <section class="barang-container">
+               <h2>Daftar Barang</h2>
+               <div class="card-wrapper">
+                    <div class="card">
+                        <img src="../asset/barang1.jpg" alt="Barang 1">
+                        <h3>Router</h3>
+                        <button onclick="window.location.href='../html/peminjaman.html'">Pinjam</button>
+                    </div>
+                        <div class="card">
+                        <img src="../asset/barang2.jpg" alt="Barang 2">
+                        <h3>Switch</h3>
+                        <button onclick="window.location.href='../html/peminjaman.html'">Pinjam</button>
+                    </div>
+                    <div class="card">
+                        <img src="../asset/barang3.jpg" alt="Barang 3">
+                        <h3>Hub</h3>
+                        <button onclick="window.location.href='../html/peminjaman.html'">Pinjam</button>
+                     </div>
+                </div>
+            </section>
+           
+        </div>
+
+        <div class="list" id="list-peminjaman">
+            <div class="container-peminjaman">
+            <h2 class="judul-list">List Peminjaman</h2>
+    
+            <table id="listTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>ID</th>
+                        <th>Nama Peminjam</th>
+                        <th>Nama Barang</th>
+                        <th>Tanggal Kembali</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>A1</td>
+                        <td>Fikri</td>
+                        <td>Router</td>
+                        <td>18-11-2024</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>A2</td>
+                        <td>Deo</td>
+                        <td>Switch</td>
+                        <td>11-11-2024</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>A3</td>
+                        <td>Putra</td>
+                        <td>Access Poin</td>
+                        <td>10-10-2024</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>A4</td>
+                        <td>Ghuffron</td>
+                        <td>Hub</td>
+                        <td>25-12-2024</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="pengembalian" id="pengembalian">
+            <div class="container-pengembalian">
+                <h2 class="judul">Kelola Pengembalian</h2>
+                <a href="formpengembalian.html"><button class="tombol-pengembalian" data-bs-toggle="modal" data-bs-target="#tambahPengembalianModal">+ Tambah Pengembalian</button></a>
+        
+                <table id="pengembalian-table"  border="1">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>ID</th>
+                            <th>Nama Pengembali</th>
+                            <th>Nama Barang</th>
+                            <th>Waktu Kembali</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A10</td>
+                            <td>Arul</td>
+                            <td>Router</td>
+                            <td>18-11-2024</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>A20</td>
+                            <td>Hamdan</td>
+                            <td>Switch</td>
+                            <td>11-11-2024</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A22</td>
+                            <td>Antono</td>
+                            <td>Access Poin</td>
+                            <td>10-10-2024</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>A25</td>
+                            <td>Edfa</td>
+                            <td>Hub</td>
+                            <td>25-12-2024</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+    </main>
+    
+    <footer>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.199927404031!2d105.19526407354078!3d-5.284945453067658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c8b50bc15e6f%3A0x1ab3ff114beff389!2sSwadhipa%202%20Vocational%20High%20School%20Natar!5e1!3m2!1sid!2sid!4v1741151878282!5m2!1sid!2sid" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="maps">
+            </iframe>
+        </div>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Visi & Misi</h3>
+                <p>Menjadi sekolah kejuruan unggulan yang menghasilkan lulusan berkualitas, siap kerja, dan berdaya saing global.</p>
+            </div>
+            <div class="footer-section">
+                <h3>SMK Swadhipa 2 Natar</h3>
+                <p>SMK Swadhipa 2 Natar berkomitmen untuk mencetak tenaga profesional di berbagai bidang industri dengan keterampilan tinggi dan etos kerja yang kuat.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <p>Email: <a href="mailto:k3industri@gmail.com">SMKSwadhipa2Natar@gmail.com</a></p>
+                <p>Telepon: 123-456-7890</p>
+                <p>Alamat: Bandar Lampung, Indonesia</p>
+            </div>
+            <div class="footer-section-social-media">
+                <h3>Ikuti Kami</h3>
+                <br>
+                <a href="https://facebook.com/smkswadhipa2" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook" width="20px" height="20px">
+                </a>
+                <a href="https://instagram.com/smkswadhipa2" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20px" height="20px">
+                </a>
+                <a href="https://x.com/smkswadhipa2" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X" width="20px" height="20px">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 SMK Swadhipa 2 Natar. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

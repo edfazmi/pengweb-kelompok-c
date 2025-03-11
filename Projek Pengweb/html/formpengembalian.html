@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../img/LOGO-TKJ-SMK-Swadhipa-2.png"
+    />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/formpengembalian.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+
+    <title>SMK Swadhipa 2 Natar</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-atas">
+          <a href="index.html">
+            <img
+              src="../img/LOGO-TKJ-SMK-Swadhipa-2.png"
+              alt="logo"
+              width="100px"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">BERANDA</a></li>
+          <li><a href="list.html">PEMINJAMAN</a></li>
+          <li><a href="pengembalian.html">PENGEMBALIAN</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+
+        <div class="pencarian">
+          <input class="bar-pencarian" type="text" placeholder="Cari" />
+          <button class="tombol-pencarian">&#128270;</button>
+        </div>
+
+        <div class="login">
+          <a href="login.html"><strong>Login</strong></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      
+      <div class="container">
+        <h2>Form Pengembalian Barang</h2>
+        <form>
+          <label for="id">ID Peminjaman</label>
+          <input
+            type="text"
+            id="id"
+            name="id"
+            placeholder="Masukkan ID"
+            required
+          />
+
+          <label for="nama">Nama Pengembali</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan Nama Pengembali"
+            required
+          />
+
+          <label for="barang">Nama Barang</label>
+          <select id="barang" name="barang" required>
+            <option value="">Pilih Barang</option>
+            <option value="Barang 1">Router</option>
+            <option value="Barang 2">Switch</option>
+            <option value="Barang 3">Hub</option>
+          </select>
+
+          <label for="jumlah">Jumlah</label>
+          <input
+            type="number"
+            id="jumlah"
+            name="jumlah"
+            min="1"
+            placeholder="Masukkan jumlah barang"
+            required
+          />
+
+          <label for="tanggal">Tanggal Pengembalian</label>
+          <input type="date" id="tanggal" name="tanggal" required />
+
+          <button type="submit">Ajukan Peminjaman</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.199927404031!2d105.19526407354078!3d-5.284945453067658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c8b50bc15e6f%3A0x1ab3ff114beff389!2sSwadhipa%202%20Vocational%20High%20School%20Natar!5e1!3m2!1sid!2sid!4v1741151878282!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="maps"
+        >
+        </iframe>
+      </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Visi & Misi</h3>
+          <p>
+            Menjadi sekolah kejuruan unggulan yang menghasilkan lulusan
+            berkualitas, siap kerja, dan berdaya saing global.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>SMK Swadhipa 2 Natar</h3>
+          <p>
+            SMK Swadhipa 2 Natar berkomitmen untuk mencetak tenaga profesional
+            di berbagai bidang industri dengan keterampilan tinggi dan etos
+            kerja yang kuat.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Hubungi Kami</h3>
+          <p>
+            Email:
+            <a href="mailto:k3industri@gmail.com"
+              >SMKSwadhipa2Natar@gmail.com</a
+            >
+          </p>
+          <p>Telepon: 123-456-7890</p>
+          <p>Alamat: Bandar Lampung, Indonesia</p>
+        </div>
+        <div class="footer-section-social-media">
+          <h3>Ikuti Kami</h3>
+          <br />
+          <a href="https://facebook.com/smkswadhipa2" class="social-icon">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+              alt="Facebook"
+              width="20px"
+              height="20px"
+            />
+          </a>
+          <a href="https://instagram.com/smkswadhipa2" class="social-icon">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+              width="20px"
+              height="20px"
+            />
+          </a>
+          <a href="https://x.com/smkswadhipa2" class="social-icon">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"
+              alt="X"
+              width="20px"
+              height="20px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 SMK Swadhipa 2 Natar. Semua Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>

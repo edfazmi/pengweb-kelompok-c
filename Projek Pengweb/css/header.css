@@ -1,0 +1,166 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #FFB200;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.logo-atas{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-atas img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.pencarian{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pencarian .bar-pencarian{
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    
+}
+
+.pencarian .tombol-pencarian{
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(188, 186, 186);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bar-pencarian::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+.login{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.login a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #2c3e2c;
+    transition: 0.3s;
+}
+
+.login a:hover{
+    background-color: #379219;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFB200;
+    padding: 1px 20px;
+    color: white;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} 
+
+.logo-atas img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .pencarian {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+}

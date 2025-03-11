@@ -1,0 +1,114 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    background-color: #3A7D44;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    background-color: #81d265;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;    
+    box-shadow: 3px 5px 4px white;
+    margin-top: 100px;
+}
+
+.head-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.head-login img{
+    width: 80px;
+    height: auto;
+}
+
+.kembali-login{
+    align-self: flex-end;
+    background-color: white;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20%;
+    
+    align-items: center;
+}
+
+.kembali-login a{
+    text-decoration: none;
+    font-size: 25x;
+    color: black;
+}
+
+.input-login{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-column input{
+    padding: 10px;
+    border: 1px solid #0D4715;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+input[type="text"] {
+    -webkit-text-security: disc;
+}
+
+.input-column img, .input-column span{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+button{
+    align-self: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #AEEA94;
+}
+
+
+
